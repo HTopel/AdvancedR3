@@ -38,3 +38,7 @@ A good rule of thumb to determine whether a package is a build or a workflow dep
 -   If you write and use functions from the package within an R script that does something to the data or analysis, then it is likely a *build* dependency.
 
 -   If you *only* ever use functions from the package in the Console, then it is probably a *workflow* dependency.
+
+# To style all your directory:
+
+# styler::style_dir()
