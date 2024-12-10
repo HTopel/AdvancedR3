@@ -32,3 +32,9 @@ edit_r_profile()
 ```
 
 #If it is a build dependency, it is an "import", if it is a workflow dependency it is a "suggest"
+
+A good rule of thumb to determine whether a package is a build or a workflow dependency is:
+
+-   If you write and use functions from the package within an R script that does something to the data or analysis, then it is likely a *build* dependency.
+
+-   If you *only* ever use functions from the package in the Console, then it is probably a *workflow* dependency.
