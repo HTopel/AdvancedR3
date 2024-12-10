@@ -21,3 +21,5 @@ Suggests:
     usethis
 URL: https://github.com/HTopel/AdvancedR3
 BugReports: https://github.com/HTopel/AdvancedR3/issues
+Depends: 
+    tidyverse
