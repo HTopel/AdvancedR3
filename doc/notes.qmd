@@ -24,3 +24,11 @@ You can add options to executable code like this
 ```
 
 The `echo: false` option disables the printing of code (only output is displayed).
+
+#Editing R.file
+
+```{r}
+edit_r_profile()
+```
+
+#If it is a build dependency, it is an "import", if it is a workflow dependency it is a "suggest"
