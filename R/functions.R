@@ -19,3 +19,16 @@ descriptive_stats <- function(data) {
             ~ round(.x, digits = 1)
         ))
 }
+
+#' Plot for basic distribution of metabolite data
+#'
+#' @param data lipidomics dataset
+#'
+#' @return histogram of metabolites
+#'
+plot_distributions <- function(data) {
+    data |>
+        ggplot2::ggplot(ggplot2::aes(x = value)) +
+        ggplot2::geom_histogram() +
+        ggplot2::facet_wrap(ggplot2::vars(metabolite), scales = "free")
+}
